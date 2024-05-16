@@ -4,9 +4,9 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/Bola.dart';
-import 'package:proyecto_flutter/Boton.dart';
-import 'package:proyecto_flutter/Plataforma.dart';
+import 'package:proyecto_flutter/Objetos/Bola.dart';
+import 'package:proyecto_flutter/Objetos/Boton.dart';
+import 'package:proyecto_flutter/Objetos/Plataforma.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Juego extends StatefulWidget {
