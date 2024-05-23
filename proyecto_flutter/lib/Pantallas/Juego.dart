@@ -26,7 +26,6 @@ enum DIRECCION { derecha, izquierda }
 class JuegoState extends State<Juego> {
   /* VARIABLES PLATAFORMA */
   double plataformaPosX = 0;
-  final double velocidadMovimiento = 0.33333333333333;
 
   void moverPlataforma1() {
     plataformaPosX = -1;

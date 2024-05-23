@@ -11,36 +11,39 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.amber,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          const DefaultTextStyle(
-            style: TextStyle(
-              fontFamily: 'PlanetBenson2',
-              fontSize: 120,
-              color: Colors.black,
-            ),
-            child: Text("BALL GAME"),
-          ),
-          Column(
-            children: [
-              Boton(
-                icon: Icons.play_arrow,
-                function: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Juego(),
-                    ),
-                  );
-                },
-                height: 70,
-                width: 70,
-                color: Colors.white,
+      width: double.infinity,
+      child: Expanded(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            const DefaultTextStyle(
+              style: TextStyle(
+                fontFamily: 'PlanetBenson2',
+                fontSize: 120,
+                color: Colors.black,
               ),
-            ],
-          ),
-        ],
+              child: Text("BALL GAME"),
+            ),
+            Column(
+              children: [
+                Boton(
+                  icon: Icons.play_arrow,
+                  function: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Juego(),
+                      ),
+                    );
+                  },
+                  height: 70,
+                  width: 70,
+                  color: Colors.white,
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
